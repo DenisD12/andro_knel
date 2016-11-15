@@ -6,16 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery.cycle2.min.js"></script>
     <script src="main2.js"></script>
     <title>Document</title>
 </head>
 
 <body>
+
+  <div id="a" class="hide">
+    <div class="background"></div>
+    <img src="img/pics/collage1.jpg" alt="collage" class="collage">
+  </div>
+
     <div class="content">
         <div class="parallax-bg">
             <h1>Ter herdenking aan<br>Andro Knel</h1>
-            <div class="page">
+            <div class="mainpage">
+                <div class="page">
+                    <div class="info" id="panel1">
+                        <div class="head">
+                            Over Andro Knel
+                        </div>
+                        <div class="info2">
+                            Andro Knel werd op 8 oktober 1967 in Rotterdam geboren. Andro was een vrolijke jongen en een goed voetballer. Op school blonk hij uit in allerlei sporten. Vooral (ijs)hockey, turnen en voetbal vond hij leuk. Na de HAVO kwam Andro uiteindelijk terecht
+                            in de ere-divisie als linksback en middenvelder. Eerst bij Sparta en toen bij NAC. Op 6 juni vertrok Andro samen met het kleurrijk elftal per vliegtuig naar Suriname om aldaar een vriendschappelijk tournooi te spelen. Op 7
+                            juni 1989 vroeg in de ochtend verongelukte het vliegtuig van de SLM vlakbij het vliegveld Zanderij in Suriname. Andro kwam om. Zo ook de meeste andere spelers van het kleurrijk elftal. Slechts 3 spelers overleefden de ramp.
+                            Deze site heeft als doel om Andro te eren en te herinneren en de wereld te vertellen wie Andro was.
+                        </div>
+                    </div>
 
+                    <div class="info active" id="panel2">
+                        <div class="head">
+                            Biografie
+                        </div>
+                        <div class="info2">
+                            In de tweede klas van de HAVO heeft Andro een collage moeten maken over zichzelf. Die collage blijkt een prachtige autobiografie te zijn. Waarschijnlijk heeft hij deze collage gemaakt op zijn verjaardag, want op een van de bladen staat de inleverdatum
+                            vermeld: 9 oktober.
+                            <div class="slides">
+                                <div class="slide cycle-slideshow"
+                                data-cycle-fx="scrollHorz"
+                                data-cycle-speed="600"
+                                data-cycle-timeout="3000"
+                                data-cycle-pager=".pager"
+                                data-cycle-pager-template ="<a herf='#'><img src='{{src}}' height=70 width=70></a>"
+                                data-cycle-next = ".arrowR"
+                                data-cycle-prev = ".arrowL">
+
+                                    <img src="img/pics/collage1.jpg" alt="collagepic" class="img" rel="a">
+                                    <img src="img/pics/collage2.jpg" alt="collagepic" class="img" rel="b">
+                                    <img src="img/pics/collage3.jpg" alt="collagepic" class="img" rel="c">
+                                    <img src="img/pics/collage4.jpg" alt="collagepic" class="img" rel="d">
+                                    <img src="img/pics/collage5.jpg" alt="collagepic" class="img" rel="e">
+                                    <img src="img/pics/collage6.jpg" alt="collagepic" class="img" rel="f">
+                                    <img src="img/pics/collage7.jpg" alt="collagepic" class="img" rel="g">
+                                </div>
+                                <div class="pager"></div>
+                                <img src="img/arrowL.png" alt="arrow" class="arrowL">
+                                <img src="img/arrowR.png" alt="arrow" class="arrowR">
+                            </div>
+                        </div>
+                    </div>
+
+                    <header>Andro Knel</header>
+                    <hr>
+                    <nav>
+                        <ul>
+                            <li rel="panel1" class="special">Gastenboek Andro</li>
+                            <li rel="panel2" class="active2">Biografie</li>
+                            <li rel="panel3">Andro web</li>
+                            <li rel="panel4">Herinneringen</li>
+                            <li rel="panel5">de bokaal</li>
+                            <li rel="panel6">Foto-album</li>
+                            <li rel="panel7">Het elftal</li>
+                            <li rel="panel8">Algeme info</li>
+                            <li rel="panel9">De maker</li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </div>
