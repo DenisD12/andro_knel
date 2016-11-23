@@ -43,4 +43,21 @@ $(document).ready(function() {
       }
     });
 
+    $("#panel6 .info2 ul li").on('click', function() {
+      $("li.active5").removeClass('active5');
+      $(this).addClass('active5');
+
+        var storyToShow = $(this).attr('rel');
+
+        $('.active6').slideUp(500, showNextstory);
+
+        function showNextstory() {
+        $(this).removeClass('active6');
+
+        $("#" + storyToShow).slideDown(500, function() {
+          $(this).addClass('active6');
+        });
+      }
+    });
+
 });
